@@ -18,17 +18,7 @@ error_reporting(0);
 
 
 	$enteredPassword = "kontolodos"; // Password yang dimasukkan pengguna
-$hashedPassword = '$2y$10$EXAMPL3zKLTADqPjK3WvYuyRIJDXzyu9Hv2GtslraF0CnW.s6kLGC'; // Hash yang disimpan
-
-// Memeriksa apakah password yang dimasukkan cocok dengan hash
-if (password_verify($enteredPassword, $hashedPassword)) {
-    echo "Password benar!";
-} else {
-    echo "Password salah!";
-}
-
-
-
+	$hashedPassword = '$2y$10$EXAMPL3zKLTADqPjK3WvYuyRIJDXzyu9Hv2GtslraF0CnW.s6kLGC'; // Hash yang disimpan
 
 
 	if (isset($_POST['pass'])) {
